@@ -1,0 +1,10 @@
+const fs=require('fs');
+let data;
+try{
+    data = fs.readFileSync('./f4.txt', 'utf8');
+    console.log('文件读取完成');
+    console.log('文件内容' + data);
+}catch(err){
+    console.log('读取文件出错'+err.message); 
+}
+
